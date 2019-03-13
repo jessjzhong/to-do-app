@@ -1,0 +1,20 @@
+header {
+  height: 60vh;
+  justify-content: center;
+  text-align: center;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: hsla(0, 0%, 100%, 0.7);
+  font-weight: semi-bold;
+}
+
+form {
+  padding-top: 1%;
+  /* text-align: center;
+  margin: auto; */
+}
