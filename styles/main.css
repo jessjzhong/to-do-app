@@ -1,7 +1,8 @@
 header {
-  height: 15vh;
+  height: 40vh;
   justify-content: center;
   text-align: center;
+  background: url(/images/pen.jpg) center / cover;
 }
 
 body {
@@ -21,6 +22,13 @@ form {
 }
 
 ul {
+  text-align: center;
+  justify-content: center;
+  list-style-type:none;
+}
 
-
+@media screen and (max-width: 1024px) {
+  header.mdl-layout__header {
+    display: flex;
+  }
 }
