@@ -7,11 +7,13 @@ function onReady() {
       const newToDoText = document.getElementById('newToDoText');
       if (!newToDoText.value) { return; } //prevents empty to do
 
-      toDos.push({
+      toDos.push ({
         title: newToDoText.value, //assign the value of the text input, newToDoText to the title key
         complete: false,
-        id: id++,
+        id: id,
       });
+
+        id++;
 
       newToDoText.value = '';
 
@@ -20,7 +22,6 @@ function onReady() {
 
     function renderTheUI() {
       const toDoList = document.getElementById('toDoList');
-
       toDoList.textContent = '';
 
       toDos.forEach(function(toDo) {
@@ -29,8 +30,7 @@ function onReady() {
         checkbox.type = "checkbox";
 
         const deleteBtn = document.createElement('button');
-          deleteBtn.type = "delete";
-          deleteBtn.textContent = "delete";
+        deleteBtn.textContent = "delete";
 
         deleteBtn.addEventListener('click', event => {
           toDos = toDos.filter(function(item) {
@@ -53,6 +53,7 @@ function onReady() {
     });
 
     renderTheUI();
+  }
 
 window.onload = function() {
      onReady();
